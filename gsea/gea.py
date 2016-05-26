@@ -171,13 +171,13 @@ def correctGeneLength(c,thresBin):
         else:       
             binSnp.append(data1[0][k])
             j=k
-            c=data1[1][k]
+            c0=data1[1][k]
             if k<(len(data1[1])-int(thresBin)):
-                while c<=int(thresBin):
-                    c+=data1[1][j+1]
+                while c0<=int(thresBin):
+                    c0+=data1[1][j+1]
                     binSnp.append(data1[0][j+1])
                     j=j+1
-                bins.append(c)
+                bins.append(c0)
                 k=j+1
 
             else:
